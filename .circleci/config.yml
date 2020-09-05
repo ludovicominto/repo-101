@@ -6,28 +6,28 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello, World!"
-      - run: spleep 5
+      - run: sleep 5
   testa:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "Hi there!"
-      - run: spleep 5
+      - run: sleep 5
   testb:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "Hey there!"
-      - run: spleep 5
+      - run: sleep 5
   deploy:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "Bye!"
-      - run: spleep 5
+      - run: sleep 5
 
 workflows:
   version: 2
